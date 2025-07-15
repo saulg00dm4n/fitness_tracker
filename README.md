@@ -35,12 +35,18 @@ cd fitness_tracker
 ```
 
 ### 2. Создать и активировать виртуальное окружение
+```bash
 python -m venv .venv
 source .venv/bin/activate     # Для Linux/Mac
 .venv\Scripts\activate        # Для Windows
+```
 
 ### 3. Установить зависимости
+```bash
 pip install -r requirements.txt
+```
 
 ### 4. Запустить приложение(будет доступно по адресу http://localhost:3000)
+```bash
 reflex run
+```
