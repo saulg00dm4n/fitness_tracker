@@ -1,0 +1,38 @@
+/* assets/styles.css */
+
+.card-animate {
+    animation: fadeInCard 0.5s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 6px solid transparent;
+}
+
+.card-animate:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-animate.type-бег {
+    border-color: #10b981; /* green */
+    background: #ecfdf5;
+}
+
+.card-animate.type-велосипед {
+    border-color: #3b82f6; /* blue */
+    background: #eff6ff;
+}
+
+.card-animate.type-силовая {
+    border-color: #f59e0b; /* amber */
+    background: #fffbeb;
+}
+
+@keyframes fadeInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
